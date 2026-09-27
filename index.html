@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Saturn — a modern programming language built from the ground up.">
+<title>Saturn — A Programming Language</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<nav class="nav"><a class="brand" href="#"><span class="brand-mark">S</span><span>Saturn</span></a><div class="nav-links"><a href="#features">Features</a><a href="#syntax">Syntax</a><a href="#roadmap">Roadmap</a></div><a class="nav-button" href="#start">Get Started <span>→</span></a></nav>
+<main>
+<section class="hero"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="hero-content"><div class="eyebrow"><span class="pulse"></span> Early development</div><h1>Code beyond<br><span>the ordinary.</span></h1><p class="hero-copy">Saturn is a programming language being built from the ground up to make writing code feel simple, expressive, and modern.</p><div class="hero-actions"><a class="button primary" href="#start">Explore Saturn <span>→</span></a><a class="button secondary" href="#syntax">See the syntax</a></div><div class="hero-meta"><span><b>01</b> Built from scratch</span><span><b>02</b> Designed for developers</span><span><b>03</b> Open to evolution</span></div></div>
+<div class="code-window hero-code"><div class="window-bar"><div class="dots"><i></i><i></i><i></i></div><span>hello.sat</span><span class="window-status">SATURN</span></div><pre><code><span class="kw">let</span> name = <span class="str">"Saturn"</span>
 
+<span class="fn">print</span>(<span class="str">"Hello, "</span> + name)
+
+<span class="kw">if</span> name == <span class="str">"Saturn"</span> {
+    <span class="fn">print</span>(<span class="str">"Welcome."</span>)
+}</code></pre></div></section>
+<section class="ticker"><div>LANGUAGE DESIGN</div><div>LEXER</div><div>PARSER</div><div>INTERPRETER</div><div>RUNTIME</div><div>DOCUMENTATION</div></section>
+<section id="features" class="section"><div class="section-label">01 — THE IDEA</div><div class="section-heading"><h2>A language with<br><span>room to grow.</span></h2><p>Saturn is an evolving project. Every part of it—from syntax to the interpreter—is being designed intentionally.</p></div>
+<div class="feature-grid"><article class="feature-card large"><div class="feature-number">01</div><div class="icon">{ }</div><h3>Readable syntax</h3><p>Keep code expressive and easy to understand without unnecessary ceremony.</p><div class="mini-code"><span class="kw">let</span> score = <span class="num">100</span></div></article><article class="feature-card"><div class="feature-number">02</div><div class="icon">λ</div><h3>Built from scratch</h3><p>A real lexer, parser, interpreter, and language runtime—not just a syntax skin.</p></article><article class="feature-card"><div class="feature-number">03</div><div class="icon">↗</div><h3>Made to evolve</h3><p>Saturn's architecture leaves room for new language features as the project grows.</p></article><article class="feature-card"><div class="feature-number">04</div><div class="icon">⌘</div><h3>Developer-first</h3><p>Clear errors, useful tooling, and documentation are part of the vision from day one.</p></article></div></section>
+<section id="syntax" class="section syntax-section"><div class="section-label">02 — THE LANGUAGE</div><div class="syntax-layout"><div><h2>Small syntax.<br><span>Big possibilities.</span></h2><p>Here's the kind of experience Saturn is aiming for. As the language develops, its syntax and capabilities will continue to take shape.</p><div class="syntax-points"><div><span>✓</span> Variables and expressions</div><div><span>✓</span> Functions and control flow</div><div><span>✓</span> A custom interpreter</div></div></div><div class="code-window big-code"><div class="window-bar"><div class="dots"><i></i><i></i><i></i></div><span>example.sat</span></div><pre><code><span class="kw">fn</span> <span class="fn">greet</span>(name) {
+    <span class="kw">return</span> <span class="str">"Hello, "</span> + name
+}
+
+<span class="kw">let</span> user = <span class="str">"developer"</span>
+<span class="kw">let</span> message = <span class="fn">greet</span>(user)
+
+<span class="fn">print</span>(message)</code></pre></div></div></section>
+<section class="quote-section"><div class="quote-mark">“</div><blockquote>Saturn isn't trying to be another copy of an existing language. <span>It's an experiment in building one.</span></blockquote><p>— The Saturn project</p></section>
+<section id="roadmap" class="section"><div class="section-label">03 — ROADMAP</div><div class="section-heading"><h2>Still early.<br><span>That's the point.</span></h2><p>The language is actively being built. Follow along as Saturn goes from an idea to a real developer tool.</p></div><div class="roadmap"><div class="roadmap-item active"><div class="roadmap-dot"></div><div class="roadmap-content"><span>NOW</span><h3>Core interpreter</h3><p>Lexer, parser, AST evaluation, variables, expressions, functions, and control flow.</p></div></div><div class="roadmap-item"><div class="roadmap-dot"></div><div class="roadmap-content"><span>NEXT</span><h3>Language expansion</h3><p>More built-ins, improved errors, modules, and a stronger standard library.</p></div></div><div class="roadmap-item"><div class="roadmap-dot"></div><div class="roadmap-content"><span>FUTURE</span><h3>Developer tooling</h3><p>Editor support, package management, documentation tooling, and better debugging.</p></div></div></div></section>
+<section id="start" class="cta"><div class="cta-glow"></div><div class="section-label">04 — JOIN THE PROJECT</div><h2>Ready to see<br><span>where Saturn goes?</span></h2><p>Saturn is just getting started. Follow the project, experiment with the language, and help shape what comes next.</p><div class="hero-actions"><a class="button primary" href="https://github.com/" target="_blank">View on GitHub <span>↗</span></a><a class="button secondary" href="#syntax">Read the docs</a></div></section>
+</main>
+<footer><div class="brand"><span class="brand-mark">S</span><span>Saturn</span></div><p>Built from scratch. Made to evolve.</p><span>© 2026 Saturn</span></footer>
+<script src="script.js"></script>
+</body></html>
